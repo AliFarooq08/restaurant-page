@@ -1,12 +1,14 @@
 import "./styles.css";
 import krabbyImage from "./chrome-krabby-patty.png"
 import kelpImg from "./chrome-kelp-shake.png"
+import krustyKrabImg from "./chrome-krusty-krab.png"
 
 
 let content = document.querySelector("#content")
 let homeButton = document.querySelector("#home-button")
 let menuButton = document.querySelector("#menu-button")
 let locationButton = document.querySelector("#location-button")
+
 //Home Button Functionality
 homeButton.addEventListener("click", () => {
     content.innerHTML = ""; // Clears the child elements of the content div
@@ -14,7 +16,7 @@ homeButton.addEventListener("click", () => {
     //Home Title Element
     let homeTitle = document.createElement("h1");
     homeTitle.setAttribute("id", "title");
-    homeTitle.textContent = "KRU57Y KR48 H0M3 P463";
+    homeTitle.textContent = "W31C0M3 70 7H3 KRU57Y KR48";
     content.appendChild(homeTitle);
 
     //Home Element
@@ -89,7 +91,7 @@ homeButton.addEventListener("click", () => {
     hours.appendChild(hourListItemSeven);
 });
 
-//homeButton.click() // Initializes Home Screen on Page Start
+homeButton.click() // Initializes Home Screen on Page Start
 
 menuButton.addEventListener("click", () => {
     content.innerHTML = ""; // Clears the child elements of the content div
@@ -136,7 +138,7 @@ menuButton.addEventListener("click", () => {
     //Image of Chrome Kelp Shake
     let imgKelpShake = document.createElement("img")
     imgKelpShake.setAttribute("class", "img-kelp-shake")
-    imgKelpShake.setAttribute("src", kelpImg) //Just learn you can do (img.src = "") ... SUCH A GREAT TIME SAVE THOUGH THIS WAS SO ANNOYING, but I continue anyways since setAttribute gets tabbed when typing set
+    imgKelpShake.setAttribute("src", kelpImg) //Just learn you can do (img.src = "") ... SUCH A GREAT TIME SAVE THOUGH THIS WAS SO ANNOYING, but I continue until location button
     imgKelpShake.setAttribute("alt", "7H3 R3FR35H1N9 K31P 5H4K3")
     item2.appendChild(imgKelpShake)
 
@@ -150,4 +152,30 @@ menuButton.addEventListener("click", () => {
     let kelpShakeDescription = document.createElement("p")
     kelpShakeDescription.textContent = "7H3 8357 7H1N9 70 90 W17H 4 CHR0M3 KR488Y P477Y."
     item2.appendChild(kelpShakeDescription)
+})
+locationButton.addEventListener("click", () => {
+    content.innerHTML = ""; // Clears the child elements of the content div
+
+    //Location Title Element --- just started to change formatting for practice
+    let locationTitle = document.createElement("h2")
+    locationTitle.id = "title"
+    locationTitle.textContent = "0UR 570R3 10C4710N:"
+    content.appendChild(locationTitle)
+    
+    //Location Element
+    let location = document.createElement("div")
+    location.id = "location"
+    content.appendChild(location)
+
+    //Chrome Krusty Krab Img
+    let krustyKrab = document.createElement("img")
+    krustyKrab.src = krustyKrabImg
+    krustyKrab.class = "krusty-krab"
+    krustyKrab.alt = "4 834U71FU1 1M463 0F KRU57Y KR48."
+    location.appendChild(krustyKrab)
+    
+    //Location text
+    let locationDesc = document.createElement("p")
+    locationDesc.innerHTML = "<strong>7313P0R7 T0:</strong> 831 B0770M F33D3R 1N. B1K1N1 B0770M, P4C1F1C 0C34N <strong>(7313P0R7 C0D3: KKB357).</strong>"
+    location.appendChild(locationDesc)
 })
