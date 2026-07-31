@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+:root, button {
+    font-family: "Michroma", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --cyan-default: #B6F6F6;
+    --light-blue-default: #92adf3;
+    --light-border-default: #2839bb ;
+    --border-default: #1F2D96;
+    --hover-cyan-default: #00ffff;
+    --hover-light-blue-default: rgb(174, 191, 234);
+    font-size: 17px;
+    margin: 0px;
+    padding: 0px;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav-item {
+    background-image: linear-gradient(var(--cyan-default), var(--light-blue-default));
+    width: 15vw;
+    padding: 12px 44px;
+    color: var(--border-default);
+    border: 2px solid var(--border-default);
+    border-radius: 16px;
+    font-size: clamp(0.5rem, 1vw, 1.5rem);
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 90vw;
+}
+header {
+    width: 100%;
+    padding: 16px;
+    background-image: linear-gradient(var(--cyan-default), var(--light-blue-default));
+    border-bottom: 8px solid var(--border-default);
+    border-left: 8px solid var(--border-default);
+    border-right: 8px solid var(--border-default);
+    border-top: 8px solid var(--border-default);
+    border-radius: 0px 0px 64px 64px;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+
+}
+body {
+    min-height: 100dvh;
+    width: 100dvw;
+    background-image: url("./sb-129.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+.nav-item:hover {
+    background-image: linear-gradient(var(--hover-cyan-default), var(--hover-light-blue-default));
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+/*The Home Page*/
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    gap: 5vh;
+    background-image: linear-gradient(var(--cyan-default), var(--light-blue-default));
+    border: 8px solid var(--border-default);
+    border-radius: 64px;
+    padding: 64px 0px;
+    margin-top: 32px;
+
+}
+#title {
+    font-size: 3rem;
+    background-image: linear-gradient(var(--cyan-default), var(--light-blue-default));
+    color: var(--border-default);
+    padding: 4px 32px;
+    border-style: solid;
+    border-width: 4px;
+    border-top-color: var(--light-border-default);
+    border-left-color: var(--light-border-default);
+    border-bottom-color: var(--border-default);
+    border-right-color: var(--border-default);
+}
+
+.intro {
+    width: 60vw;
+    border: 4px solid var(--border-default);
+    border-radius: 32px;
+    padding: 32px 16px;
+
+}
+#review-container {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 4px solid var(--border-default);
+    padding: 32px 16px;
+    border-radius: 32px;
+}
+.attribution {
+    display: flex;
+    flex-direction: row;;
+    justify-content: flex-end;
+    margin-right: 16px;
+    text-align: center;
+    font-size: 1.5rem
+}
+#schedule {
+    padding: 32px 0px;
+    padding-right: 32px;
+    padding-left: 48px;
+    border: 4px solid var(--border-default);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hours-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+/* The Menu Items*/
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100vw;
+}
+
+.item1, .item2 {
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-image: linear-gradient(var(--cyan-default), var(--light-blue-default));
+    padding: 32px;
+    border: 16px solid var(--border-default);
+}
+.img-krabby {
+    width: auto;
+    height: clamp(100px, 20vw, 600px);
+}
+.img-kelp-shake {
+    width: auto;
+    height: clamp(300px, 60vh, 600px);
+}
+.patty, .kelp-shake {
+    font-size: 1.5rem;
+}
+.patty {
+    width: auto;
+    height: auto;
+}
+.kelp-shake {
+    width: auto;
+    height: auto;
+
+}
+p {
+    font-size: 1rem;
+    width: auto;
+    height: auto;
+}
