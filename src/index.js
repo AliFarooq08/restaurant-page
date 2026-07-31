@@ -1,18 +1,21 @@
 import "./styles.css";
+import krabbyImage from "./chrome-krabby-patty.png"
+import kelpImg from "./chrome-kelp-shake.png"
+
 
 let content = document.querySelector("#content")
 let homeButton = document.querySelector("#home-button")
 let menuButton = document.querySelector("#menu-button")
 let locationButton = document.querySelector("#location-button")
-
+//Home Button Functionality
 homeButton.addEventListener("click", () => {
-    content.innerHTML = "" // Clears the child elements of the content div
+    content.innerHTML = ""; // Clears the child elements of the content div
 
-    //Title Element
-    let title = document.createElement("h1");
-    title.setAttribute("id", "title");
-    title.textContent = "KRU57Y KR48 H0M3 P463";
-    content.appendChild(title);
+    //Home Title Element
+    let homeTitle = document.createElement("h1");
+    homeTitle.setAttribute("id", "title");
+    homeTitle.textContent = "KRU57Y KR48 H0M3 P463";
+    content.appendChild(homeTitle);
 
     //Home Element
     let home = document.createElement("div");
@@ -43,7 +46,7 @@ homeButton.addEventListener("click", () => {
 
     //Name
     let name = document.createElement("p");
-    name.textContent = "5P0N637R0N";
+    name.textContent = "- 5P0N637R0N";
     attribution.appendChild(name);
 
     //Schedule
@@ -85,4 +88,66 @@ homeButton.addEventListener("click", () => {
     hourListItemSeven.textContent = "5UND4Y: C1053D";
     hours.appendChild(hourListItemSeven);
 });
-//homeButton.click() // Triggers event listener beforehand
+
+homeButton.click() // Initializes Home Screen on Page Start
+
+menuButton.addEventListener("click", () => {
+    content.innerHTML = ""; // Clears the child elements of the content div
+
+    //Menu Title Element
+    let menuTitle = document.createElement("h2");
+    menuTitle.textContent = "M3NU 173Ms";
+    menuTitle.setAttribute("id", "title");
+    content.appendChild(menuTitle);
+
+    //Menu Element
+    let menu = document.createElement("div");
+    menu.setAttribute("id", "menu");
+    content.appendChild(menu);
+
+    //Item 1 Element
+    let item1 = document.createElement("div");
+    item1.setAttribute("class", "item1")
+    menu.appendChild(item1)
+
+    //Image of Chrome Krabby Patty
+    let imgKrabby = document.createElement("img")
+    imgKrabby.setAttribute("class", "img-krabby")
+    imgKrabby.setAttribute("src", krabbyImage)
+    imgKrabby.setAttribute("alt", "7H3 W0ND3RFU1 CHR0M3 KR488Y P477Y")
+    item1.appendChild(imgKrabby)
+
+    //Chrome Krabby Patty Title
+    let pattyTitle = document.createElement("h2")
+    pattyTitle.setAttribute("class", "patty")
+    pattyTitle.textContent = "CHR0M3 KR488Y P477Y"
+    item1.appendChild(pattyTitle)
+
+    //Chrome Krabby Patty Description
+    let pattyDescription = document.createElement("p")
+    pattyDescription.textContent = "4 CU570M3R F4V0R173, TH3 CHR0M3 KR488Y P477Y 15 3NJ0Y3D 8Y 411."
+    item1.appendChild(pattyDescription)
+
+    //Item 2 Element
+    let item2 = document.createElement("div");
+    item2.setAttribute("class", "item2")
+    menu.appendChild(item2)
+
+    //Image of Chrome Kelp Shake
+    let imgKelpShake = document.createElement("img")
+    imgKelpShake.setAttribute("class", "img-kelp-shake")
+    imgKelpShake.setAttribute("src", kelpImg) //Just learn you can do (img.src = "") ... SUCH A GREAT TIME SAVE THOUGH THIS WAS SO ANNOYING, but I continue anyways since setAttribute gets tabbed when typing set
+    imgKelpShake.setAttribute("alt", "7H3 R3FR35H1N9 K31P 5H4K3")
+    item2.appendChild(imgKelpShake)
+
+    //Chrome Kelp Shake Title
+    let kelpShake = document.createElement("h2")
+    kelpShake.setAttribute("class", "kelp-shake")
+    kelpShake.textContent = "CHR0M3 K31P 5H4K3"
+    item2.appendChild(kelpShake)
+
+    //Chrome Kelp Shake Description
+    let kelpShakeDescription = document.createElement("p")
+    kelpShakeDescription.textContent = "7H3 8357 7H1N9 70 90 W17H 4 CHR0M3 KR488Y P477Y."
+    item2.appendChild(kelpShakeDescription)
+})

@@ -58,6 +58,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat; 
     background-attachment: fixed; 
+    overflow-x: hidden;
 }
 .nav-item:hover {
     background-image: linear-gradient(var(--hover-cyan-default), var(--hover-light-blue-default));
@@ -67,14 +68,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 32px;
 }
 /*The Home Page*/
 #home {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70vw;
+    width: 50vw;
     gap: 5vh;
     background-image: linear-gradient(var(--cyan-default), var(--light-blue-default));
     border: 8px solid var(--border-default);
@@ -94,17 +94,18 @@ body {
     border-left-color: var(--light-border-default);
     border-bottom-color: var(--border-default);
     border-right-color: var(--border-default);
+    margin: 32px;
 }
 
 .intro {
-    width: 60vw;
+    width: 40vw;
     border: 4px solid var(--border-default);
     border-radius: 32px;
     padding: 32px 16px;
 
 }
 #review-container {
-    width: 60vw;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     gap: 16px;
