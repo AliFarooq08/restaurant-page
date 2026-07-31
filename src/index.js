@@ -89,7 +89,7 @@ homeButton.addEventListener("click", () => {
     hours.appendChild(hourListItemSeven);
 });
 
-homeButton.click() // Initializes Home Screen on Page Start
+//homeButton.click() // Initializes Home Screen on Page Start
 
 menuButton.addEventListener("click", () => {
     content.innerHTML = ""; // Clears the child elements of the content div
@@ -125,7 +125,7 @@ menuButton.addEventListener("click", () => {
 
     //Chrome Krabby Patty Description
     let pattyDescription = document.createElement("p")
-    pattyDescription.textContent = "4 CU570M3R F4V0R173, TH3 CHR0M3 KR488Y P477Y 15 3NJ0Y3D 8Y 411."
+    pattyDescription.textContent = "4 CU570M3R F4V0R173, 7H3 CHR0M3 KR488Y P477Y 15 3NJ0Y3D 8Y 411."
     item1.appendChild(pattyDescription)
 
     //Item 2 Element

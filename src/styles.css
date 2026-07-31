@@ -187,3 +187,19 @@ p {
     width: auto;
     height: auto;
 }
+/*Location*/
+#location {
+    background-image: linear-gradient(var(--cyan-default), var(--light-blue-default));
+    padding: 32px;
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 8px solid var(--border-default);
+}
+.krusty-krab {
+    width: auto;
+    height: clamp(100px, 20vw, 600px);}
