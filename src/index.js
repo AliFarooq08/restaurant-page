@@ -98,7 +98,7 @@ menuButton.addEventListener("click", () => {
 
     //Menu Title Element
     let menuTitle = document.createElement("h2");
-    menuTitle.textContent = "M3NU 173Ms";
+    menuTitle.textContent = "M3NU 173M5:";
     menuTitle.setAttribute("id", "title");
     content.appendChild(menuTitle);
 
@@ -170,12 +170,12 @@ locationButton.addEventListener("click", () => {
     //Chrome Krusty Krab Img
     let krustyKrab = document.createElement("img")
     krustyKrab.src = krustyKrabImg
-    krustyKrab.class = "krusty-krab"
+    krustyKrab.className = "krusty-krab"
     krustyKrab.alt = "4 834U71FU1 1M463 0F KRU57Y KR48."
     location.appendChild(krustyKrab)
     
     //Location text
     let locationDesc = document.createElement("p")
-    locationDesc.innerHTML = "<strong>7313P0R7 T0:</strong> 831 B0770M F33D3R 1N. B1K1N1 B0770M, P4C1F1C 0C34N <strong>(7313P0R7 C0D3: KKB357).</strong>"
+    locationDesc.innerHTML = "<strong>7313P0R7 70:</strong> 831 80770M F33D3R 1N. 81K1N1 80770M, P4C1F1C 0C34N <strong>(7313P0R7 C0D3: KK8357).</strong>"
     location.appendChild(locationDesc)
 })
